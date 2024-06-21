@@ -141,7 +141,7 @@ class ExpectationsBlockRewriter {
             hasTimes = true;
             writeMethodVerification(invocation, mockInvocationResults.getMaxTimes(), "atMost");
         }
-        if (!hasExpectationsResults && !hasTimes) {
+        if (!hasTimes) {
             writeMethodVerification(invocation, null, null);
         }
     }
